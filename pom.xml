@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>pl.sda.intermediate11</groupId>
+    <artifactId>intermediate</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <parent>
+
+        <groupId>org.springframework.boot</groupId>
+
+        <artifactId>spring-boot-starter-parent</artifactId>
+
+        <version>2.0.2.RELEASE</version>
+
+        <relativePath/> <!-- lookup parent from repository -->
+
+    </parent>
+
+    <properties>
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <java.version>1.8</java.version>
+
+    </properties>
+
+    <build>
+
+        <plugins>
+
+            <plugin>
+
+                <groupId>org.apache.maven.plugins</groupId>
+
+                <artifactId>maven-compiler-plugin</artifactId>
+
+                <configuration>
+
+                    <source>1.8</source>
+
+                    <target>1.8</target>
+
+                </configuration>
+
+            </plugin>
+
+            <plugin>
+
+                <groupId>org.springframework.boot</groupId>
+
+                <artifactId>spring-boot-maven-plugin</artifactId>
+
+            </plugin>
+
+        </plugins>
+
+    </build>
+
+    <dependencies>
+
+        <dependency>
+
+            <groupId>org.springframework.boot</groupId>
+
+            <artifactId>spring-boot-starter-web</artifactId>
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>org.springframework.boot</groupId>
+
+            <artifactId>spring-boot-starter-test</artifactId>
+
+            <scope>test</scope>
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>org.springframework.boot</groupId>
+
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+
+        </dependency>
+
+        <!-- hot swapping, disable cache for template, enable live reload -->
+
+        <!--<dependency>-->
+
+            <!--<groupId>org.springframework.boot</groupId>-->
+
+            <!--<artifactId>spring-boot-devtools</artifactId>-->
+
+            <!--<optional>true</optional>-->
+
+        <!--</dependency>-->
+
+        <dependency>
+
+            <groupId>org.projectlombok</groupId>
+
+            <artifactId>lombok</artifactId>
+
+            <version>1.16.20</version>
+
+            <scope>provided</scope>
+
+        </dependency>
+
+        <!--<dependency>-->
+
+            <!--<groupId>com.fasterxml.jackson.core</groupId>-->
+
+            <!--<artifactId>jackson-databind</artifactId>-->
+
+            <!--<version>2.6.3</version>-->
+
+        <!--</dependency>-->
+
+        <!-- Optional, for bootstrap -->
+
+        <dependency>
+
+            <groupId>org.webjars</groupId>
+
+            <artifactId>bootstrap</artifactId>
+
+            <version>3.3.7</version>
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>org.apache.commons</groupId>
+
+            <artifactId>commons-lang3</artifactId>
+
+            <version>3.7</version>
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>com.google.guava</groupId>
+
+            <artifactId>guava</artifactId>
+
+            <version>23.0</version>
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>com.google.code.gson</groupId>
+
+            <artifactId>gson</artifactId>
+
+            <version>2.8.0</version>
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>org.junit.jupiter</groupId>
+
+            <artifactId>junit-jupiter-api</artifactId>
+
+            <version>5.0.0</version>
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>commons-codec</groupId>
+
+            <artifactId>commons-codec</artifactId>
+
+            <version>1.10</version>
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>com.squareup.retrofit2</groupId>
+
+            <artifactId>retrofit</artifactId>
+
+            <version>2.4.0</version>
+
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-collections4</artifactId>
+            <version>4.2</version>
+        </dependency>
+
+        <dependency>
+
+            <groupId>com.squareup.retrofit2</groupId>
+
+            <artifactId>converter-gson</artifactId>
+
+            <version>2.4.0</version>
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>com.squareup.retrofit2</groupId>
+
+            <artifactId>adapter-java8</artifactId>
+
+            <version>2.4.0</version>
+
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+
+        <dependency>
+
+            <groupId>org.hibernate</groupId>
+
+            <artifactId>hibernate-core</artifactId>
+
+            <version>5.3.6.Final</version>
+
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+
+        <dependency>
+
+            <groupId>mysql</groupId>
+
+            <artifactId>mysql-connector-java</artifactId>
+
+            <version>8.0.12</version>
+
+        </dependency>
+
+    </dependencies>
+
+</project>
